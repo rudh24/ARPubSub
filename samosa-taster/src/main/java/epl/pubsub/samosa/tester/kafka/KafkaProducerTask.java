@@ -38,13 +38,13 @@ public class KafkaProducerTask implements Task {
                 final ProducerRecord<Long, String> producerRecord = new ProducerRecord<>(initialTopic, payload);
                 Future<RecordMetadata> futureRecord = producer.send(producerRecord);
                 RecordMetadata record;
-                try {
+//                try {
 //                    record = futureRecord.get();
 //                    log.debug(String.format("Metadata record timestamp: [%d]",record.timestamp()));
-                    producer.updateMetrics();
-                } catch (ExecutionException e) {
-                    e.printStackTrace();
-                }
+//                } catch (ExecutionException e) {
+//                    e.printStackTrace();
+//                }
+                producer.updateMetrics();
 //                log.info("sent message");
                 Thread.sleep(interval);
             } catch(InterruptedException e){
