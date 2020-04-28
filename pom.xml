@@ -23,9 +23,9 @@
     </build>
 
 
-<modules>
-    <module>samosa</module>
-    <module>samosa-taster</module>
-</modules>
+    <modules>
+        <module>samosa</module>
+        <module>samosa-taster</module>
+    </modules>
 
 </project>

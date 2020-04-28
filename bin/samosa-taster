@@ -1,0 +1,3 @@
+#!/bin/bash
+set -x
+java -jar ../samosa-taster/target/samosa-taster-1.0-SNAPSHOT-jar-with-dependencies.jar $*

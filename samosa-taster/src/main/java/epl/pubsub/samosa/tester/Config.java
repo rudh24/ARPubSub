@@ -7,17 +7,12 @@ public class Config{
     public int numConsumers;
     public int numPartitionsPerTopic;
     public int testDurationSeconds; 
-   
     public IndexConfig indexConfig;
-
     public List<String> consumerTrajectoryFiles;
     public List<String> producerTrajectoryFiles;
-
     public int locationChangeInterval;
-
     public String payloadFile;
     public String driver;
     public String driverConfigFile;
-    
     public String outputFile;
 }
